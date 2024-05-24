@@ -6,9 +6,10 @@ Repository หรือ Repo นี้เป็นพื้นที่เก็
 # วิธีการเปิดอ่านและดาวน์โหลด
 
 ขั้นตอนการอ่าน
-![READ-01][assets/images/Read-01.png]
-![READ-02][assets/images/Read-02.png]
+![READ-01](assets/images/Read-01.png)
+*กรณีต้องการดาวน์โหลดเอกสารนั้นให้กดปุ่มในกรอบตามรูป
+![READ-02](assets/images/Read-02.png)
 
 ขั้นตอนการดาวน์โหลด
-![Download-01][assets/images/Download-01.png]
-![Download-02][assets/images/Download-02.png]
+![Download-01](assets/images/Download-01.png)
+![Download-02](assets/images/Download-02.png)
