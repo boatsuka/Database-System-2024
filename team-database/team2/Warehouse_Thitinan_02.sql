@@ -32,7 +32,7 @@ join OrderDetails OD on O.OrderID = OD.OrderID group by O.OrderID order by max(O
 select sum((Quantity * UnitPrice)) AS Circulation from OrderDetails;
 
 # 8. จำนวนสินค้าทั้งหมดในสต็อกตามหมวดหมู่
-select P.QuantityInStock, C.CategoryName from Products P join Categories C on P.CategoryID = C.CategoryID
+select C.CategoryName, sum(P.QuantityInStock) AS CategoryStock  from Products P join Categories C on P.CategoryID = C.CategoryID
 group by C.CategoryName;
 
 # 9. จำนวนลูกค้าที่มีการสั่งซื้อ
