@@ -1,0 +1,24 @@
+### 1.ดึงข้อมูลสินค้าทั้งหมดพร้อมรายละเอียด (ชื่อสินค้า, ราคา, จำนวนในสต็อก, ชื่อผู้ขาย, และหมวดหมู่ของสินค้า) */
+SELECT ProductName, Price, QuantityInStock, VendorName, CategoryName
+FROM Products, Vendors, Categories;
+### 2. ดึงข้อมูลลูกค้าทั้งหมดพร้อมที่อยู่และข้อมูลติดต่อ */
+SELECT CustomerID, FirstName, LastName, Address, Phone, Email
+FROM Customers;
+### 3. ดึงข้อมูลการสั่งซื้อทั้งหมดพร้อมรายละเอียดของสินค้าที่ถูกสั่งซื้อ */
+
+### 4. ยอดขายรวมต่อเดือนในแต่ละปี */
+
+### 5. สินค้าขายดีที่สุดพร้อมจำนวนที่ขายและรายได้รวม */
+
+### 6. ลูกค้าที่มีการสั่งซื้อมากที่สุดพร้อมที่อยู่และจำนวนการสั่งซื้อ */
+SELECT FirstName, LastName, Address, MAX(TotalAmount)
+FROM Customers, Orders;
+### 7. ยอดขายรวมจากการสั่งซื้อทั้งหมด */
+SELECT SUM(TotalAmount) AS TotalSales
+FROM Orders;
+### 8. จำนวนสินค้าทั้งหมดในสต็อกตามหมวดหมู่ */
+SELECT ProductName, QuantityInStock
+FROM Products;
+### 9. จำนวนลูกค้าที่มีการสั่งซื้อ */
+SELECT COUNT(OrderID) AS NumOrderID
+FROM OrderDetails;
